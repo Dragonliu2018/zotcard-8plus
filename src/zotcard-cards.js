@@ -710,6 +710,66 @@ Zotero.ZotCard.Cards = Object.assign(Zotero.ZotCard.Cards, {
 					}
 				}
 
+				if (filters.tags1 && filters.tags1.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags1.length; index++) {
+						if ((filters.tags1[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags1[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (!found) {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} tags ${JSON.stringify(card.more.tags)} is no in ${JSON.stringify(filters.tags1)}, be filtered.`);
+						return false;
+					}
+				}
+
+				if (filters.tags2 && filters.tags2.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags2.length; index++) {
+						if ((filters.tags2[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags2[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (!found) {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} tags ${JSON.stringify(card.more.tags)} is no in ${JSON.stringify(filters.tags2)}, be filtered.`);
+						return false;
+					}
+				}
+
+				if (filters.tags3 && filters.tags3.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags3.length; index++) {
+						if ((filters.tags3[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags3[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (!found) {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} tags ${JSON.stringify(card.more.tags)} is no in ${JSON.stringify(filters.tags3)}, be filtered.`);
+						return false;
+					}
+				}
+
+				if (filters.tags4 && filters.tags4.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags4.length; index++) {
+						if ((filters.tags4[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags4[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (!found) {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} tags ${JSON.stringify(card.more.tags)} is no in ${JSON.stringify(filters.tags4)}, be filtered.`);
+						return false;
+					}
+				}
+
 				if (filters.title) {
 					if (!card.note.title.includes(filters.title)) {
 						Zotero.ZotCard.Logger.log(`The note ${card.note.title} title is no include ${filters.title}, be filtered.`);
@@ -757,6 +817,70 @@ Zotero.ZotCard.Cards = Object.assign(Zotero.ZotCard.Cards, {
 						return true;
 					} else {
 						Zotero.ZotCard.Logger.log(`The note ${card.note.title} cardtype ${card.more.tags.join(', ')} is no in ${filters.tags.join(', ')}, be filtered.`);
+					}
+				}
+
+				if (filters.tags1 && filters.tags1.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags1.length; index++) {
+						if ((filters.tags1[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags1[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (found) {
+						return true;
+					} else {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} cardtype ${card.more.tags.join(', ')} is no in ${filters.tags1.join(', ')}, be filtered.`);
+					}
+				}
+
+				if (filters.tags2 && filters.tags2.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags2.length; index++) {
+						if ((filters.tags2[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags2[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (found) {
+						return true;
+					} else {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} cardtype ${card.more.tags.join(', ')} is no in ${filters.tags2.join(', ')}, be filtered.`);
+					}
+				}
+
+				if (filters.tags3 && filters.tags3.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags3.length; index++) {
+						if ((filters.tags3[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags3[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (found) {
+						return true;
+					} else {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} cardtype ${card.more.tags.join(', ')} is no in ${filters.tags3.join(', ')}, be filtered.`);
+					}
+				}
+
+				if (filters.tags4 && filters.tags4.length > 0) {
+					var found = false;
+					for (let index = 0; index < filters.tags4.length; index++) {
+						if ((filters.tags4[index] === '0-' && card.more.tags.length === 0) || card.more.tags.find((t) => (t.type + '-' + t.tag) === filters.tags4[index])) {
+							found = true;
+							break;
+						}
+					}
+
+					if (found) {
+						return true;
+					} else {
+						Zotero.ZotCard.Logger.log(`The note ${card.note.title} cardtype ${card.more.tags.join(', ')} is no in ${filters.tags4.join(', ')}, be filtered.`);
 					}
 				}
 
@@ -1016,6 +1140,8 @@ Zotero.ZotCard.Cards = Object.assign(Zotero.ZotCard.Cards, {
 			}
 
 			card.more.statistics = { words, en_words, cn_words, num_words, length, lines, sizes, text, title, space };
+		} else {
+			card.more.statistics = { words: 0, en_words: 0, cn_words: 0, num_words: 0, length: 0, lines: 0, sizes: 0, text: '', title: '', space: '' };
 		}
 		if (profiles.parseDate) {
 			card.more.date = Zotero.ZotCard.Cards.parseCardDate(html);

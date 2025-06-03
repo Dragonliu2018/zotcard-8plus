@@ -635,6 +635,66 @@
 								</el-form-item>
 								<el-form-item>
 									<template #label>
+										<label data-l10n-id="zotcard-card-manager-tags">卡片标签1</label>
+									</template>
+									<el-select v-model="filters.tags1" multiple collapse-tags class="fill" @change="handleFilterChange('tags1')" :disabled="moreLoadeds < total">
+										<el-option
+										  v-for="item in renders.options.tags"
+										  :key="item.type + '-' + item.tag"
+										  :label="item.tag"
+										  :value="item.type + '-' + item.tag">
+											<img v-if="item.type === ZotCardConsts.tagType.zotero" :src="`chrome://zotero/skin/16/universal/tag.svg`" onerror="this.src='../images/zotero32.png'" class="el-icon"><img>
+											<span :style="{color: item.color}">{{ item.tag }}</span>
+										</el-option>
+									</el-select>
+								</el-form-item>
+								<el-form-item>
+									<template #label>
+										<label data-l10n-id="zotcard-card-manager-tags">卡片标签1</label>
+									</template>
+									<el-select v-model="filters.tags2" multiple collapse-tags class="fill" @change="handleFilterChange('tags2')" :disabled="moreLoadeds < total">
+										<el-option
+										  v-for="item in renders.options.tags"
+										  :key="item.type + '-' + item.tag"
+										  :label="item.tag"
+										  :value="item.type + '-' + item.tag">
+											<img v-if="item.type === ZotCardConsts.tagType.zotero" :src="`chrome://zotero/skin/16/universal/tag.svg`" onerror="this.src='../images/zotero32.png'" class="el-icon"><img>
+											<span :style="{color: item.color}">{{ item.tag }}</span>
+										</el-option>
+									</el-select>
+								</el-form-item>
+								<el-form-item>
+									<template #label>
+										<label data-l10n-id="zotcard-card-manager-tags">卡片标签1</label>
+									</template>
+									<el-select v-model="filters.tags3" multiple collapse-tags class="fill" @change="handleFilterChange('tags3')" :disabled="moreLoadeds < total">
+										<el-option
+										  v-for="item in renders.options.tags"
+										  :key="item.type + '-' + item.tag"
+										  :label="item.tag"
+										  :value="item.type + '-' + item.tag">
+											<img v-if="item.type === ZotCardConsts.tagType.zotero" :src="`chrome://zotero/skin/16/universal/tag.svg`" onerror="this.src='../images/zotero32.png'" class="el-icon"><img>
+											<span :style="{color: item.color}">{{ item.tag }}</span>
+										</el-option>
+									</el-select>
+								</el-form-item>
+								<el-form-item>
+									<template #label>
+										<label data-l10n-id="zotcard-card-manager-tags">卡片标签1</label>
+									</template>
+									<el-select v-model="filters.tags4" multiple collapse-tags class="fill" @change="handleFilterChange('tags4')" :disabled="moreLoadeds < total">
+										<el-option
+										  v-for="item in renders.options.tags"
+										  :key="item.type + '-' + item.tag"
+										  :label="item.tag"
+										  :value="item.type + '-' + item.tag">
+											<img v-if="item.type === ZotCardConsts.tagType.zotero" :src="`chrome://zotero/skin/16/universal/tag.svg`" onerror="this.src='../images/zotero32.png'" class="el-icon"><img>
+											<span :style="{color: item.color}">{{ item.tag }}</span>
+										</el-option>
+									</el-select>
+								</el-form-item>
+								<el-form-item>
+									<template #label>
 										<label data-l10n-id="zotcard-card-manager-title">卡片标题1</label>
 									</template>
 									<el-input v-model="filters.title" @input="handleFilterInput('title')" clearable></el-input>

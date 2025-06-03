@@ -810,6 +810,7 @@ window.onload = async function () {
             
             break;
           case 'tags':
+          case 'tags1':
           case 'cardtypes':
             if (filters[field].length > 1 && filters[field][filters[field].length - 1] === ('-')) {
               for (let index = filters[field].length - 1; index >= 0; index--) {
@@ -938,6 +939,10 @@ window.onload = async function () {
           dates: filters.dates,
           cardtypes: filters.cardtypes,
           tags: filters.tags,
+          tags1: filters.tags1,
+          tags2: filters.tags2,
+          tags3: filters.tags3,
+          tags4: filters.tags4,
           title: filters.title,
           content: filters.content,
           orderby: filters.orderby,
@@ -1012,6 +1017,10 @@ window.onload = async function () {
         filters.dates = fileSaveFilter.dates;
         filters.cardtypes = fileSaveFilter.cardtypes;
         filters.tags = fileSaveFilter.tags;
+        filters.tags1 = fileSaveFilter.tags1;
+        filters.tags2 = fileSaveFilter.tags2;
+        filters.tags3 = fileSaveFilter.tags3;
+        filters.tags4 = fileSaveFilter.tags4;
         filters.title = fileSaveFilter.title;
         filters.content = fileSaveFilter.content;
         filters.orderby = fileSaveFilter.orderby;

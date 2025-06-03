@@ -67,7 +67,7 @@ async function startup({ id, version, rootURI }) {
 }
 
 function onMainWindowLoad({ window }) {
-	Zotero.ZotCard.addToWindow(window);
+	Zotero.ZotCard.initWindow(window);
 }
 
 function onMainWindowUnload({ window }) {

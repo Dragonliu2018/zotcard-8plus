@@ -18,17 +18,23 @@ Zotero.ZotCard = Object.assign(Zotero.ZotCard, {
 		this.rootURI = rootURI;
 		this.initialized = true;
 
+		this.initWindow(Zotero.getMainWindow());
+
+		Zotero.ZotCard.Logger.log('Zotero.ZotCard inited.');
+	},
+
+	initWindow(window) {
 		// Add a stylesheet to the main Zotero pane
-		let link1 = Zotero.getMainWindow().document.createElement('link');
+		let link1 = window.document.createElement('link');
 		link1.id = 'zotcard-stylesheet';
 		link1.type = 'text/css';
 		link1.rel = 'stylesheet';
 		link1.href = this.rootURI + `style-${Zotero.isMac ? 'mac' : 'win'}.css`;
-		Zotero.getMainWindow().document.documentElement.appendChild(link1);
+		window.document.documentElement.appendChild(link1);
 		this.storeAddedElement(link1);
 
 		// Use Fluent for localization
-		Zotero.getMainWindow().MozXULElement.insertFTLIfNeeded("zotcard.ftl");
+		window.MozXULElement.insertFTLIfNeeded("zotcard.ftl");
 
 		Zotero.ZotCard.Cards.initPrefs();
 
@@ -65,8 +71,6 @@ Zotero.ZotCard = Object.assign(Zotero.ZotCard, {
 		}
 		Zotero.ZotCard.Prefs.clear('config.tinify_api_key');
 		Zotero.ZotCard.Prefs.clear('config.compress_with_width_and_height');
-		
-		Zotero.ZotCard.Logger.log('Zotero.ZotCard inited.');
 	},
 
 	createNoteToolbar() {
