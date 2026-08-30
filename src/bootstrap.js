@@ -16,7 +16,7 @@ async function startup({ id, version, rootURI }) {
 		image: 'chrome://zotcard/content/images/zotcard.png',
 		src: rootURI + 'chrome/content/preferences/preferences.xhtml',
 		scripts: [rootURI + 'chrome/content/preferences/preferences.js'],
-		helpURL: 'https://github.com/018/zotcard',
+		helpURL: 'https://github.com/Dragonliu2018/zotcard-8plus',
 	});
 
 	var aomStartup = Cc["@mozilla.org/addons/addon-manager-startup;1"].getService(Ci.amIAddonManagerStartup);

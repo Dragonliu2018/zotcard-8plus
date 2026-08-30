@@ -3,23 +3,23 @@
 </p>
 <p align="center">
   <a href="https://www.zotero.org">
-    <img src="https://img.shields.io/badge/Zotero-7-red" alt="Zotero-7">
+    <img src="https://img.shields.io/badge/Zotero-8%2F9-red" alt="Zotero-8/9">
   </a>
-  <a href="https://github.com/018/zotcard/stargazers">
-    <img src="https://img.shields.io/github/stars/018/zotcard?label=Stars" alt="element-ui">
+  <a href="https://github.com/Dragonliu2018/zotcard-8plus/stargazers">
+    <img src="https://img.shields.io/github/stars/Dragonliu2018/zotcard-8plus?label=Stars" alt="element-ui">
   </a>
-  <a href="https://github.com/018/zotcard/releases">
-    <img src="https://img.shields.io/github/downloads/018/zotcard/total?label=Downloads" alt="element-ui">
+  <a href="https://github.com/Dragonliu2018/zotcard-8plus/releases">
+    <img src="https://img.shields.io/github/downloads/Dragonliu2018/zotcard-8plus/total?label=Downloads" alt="element-ui">
   </a>
 </p>
 
-[English](https://github.com/018/zotcard) | 简体中文
+[English](https://github.com/Dragonliu2018/zotcard-8plus) | 简体中文
 
 ## 介绍
 zotcard是Zotero的一个插件，它是卡片法笔记的提效工具。它提供了卡片模版（如默认有概念卡、人物卡、金句卡等，支持自定义其他卡片模版），可以让你快速写卡。除此之外，还帮助你卡片分类以及统一卡片的标准格式。
 
 ## 快速开始
-- 第一步、下载zotcard最新版本：[点击下载](https://github.com/018/zotcard/releases)；
+- 第一步、下载zotcard最新版本：[点击下载](https://github.com/Dragonliu2018/zotcard-8plus/releases)；
 
 - 第二步、Zotero - 工具 - 附加组件 - ⚙️ - Install Add-on From File...，选择插件xpi文件；
 

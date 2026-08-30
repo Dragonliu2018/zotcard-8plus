@@ -3,25 +3,25 @@
 </p>
 <p align="center">
   <a href="https://www.zotero.org">
-    <img src="https://img.shields.io/badge/Zotero-7-red" alt="Zotero-7">
+    <img src="https://img.shields.io/badge/Zotero-8%2F9-red" alt="Zotero-8/9">
   </a>
-  <a href="https://github.com/018/zotcard/stargazers">
-    <img src="https://img.shields.io/github/stars/018/zotcard?label=Stars" alt="element-ui">
+  <a href="https://github.com/Dragonliu2018/zotcard-8plus/stargazers">
+    <img src="https://img.shields.io/github/stars/Dragonliu2018/zotcard-8plus?label=Stars" alt="element-ui">
   </a>
-  <a href="https://github.com/018/zotcard/releases">
-    <img src="https://img.shields.io/github/downloads/018/zotcard/total?label=Downloads" alt="element-ui">
+  <a href="https://github.com/Dragonliu2018/zotcard-8plus/releases">
+    <img src="https://img.shields.io/github/downloads/Dragonliu2018/zotcard-8plus/total?label=Downloads" alt="element-ui">
   </a>
 </p>
 
 
-English | [简体中文](https://github.com/018/zotcard/blob/main/README_CN.md)
+English | [简体中文](https://github.com/Dragonliu2018/zotcard-8plus/blob/main/README_CN.md)
 
 ## Introduction
 ZotCard is a plug-in for Zotero, which is a card note-taking enhancement tool. It provides card templates (such as concept card, character card, golden sentence card, etc., by default, you can customize other card templates), so you can write cards quickly. In addition, it helps you sort cards and standardize card formats.
 
 ## Getting started
 
-- Step 1, download the latest version zotcard: [Download](https://github.com/018/zotcard/releases);
+- Step 1, download the latest version zotcard: [Download](https://github.com/Dragonliu2018/zotcard-8plus/releases);
 
 - Step 2: Zotero - Tools - Add-ons - ⚙️ - Install Add-on From File... , select the plug-in xpi file;
 

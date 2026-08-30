@@ -1,9 +1,9 @@
 {
   "name": "zotcard",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "type": "module",
   "description": "ZotCard - 卡片笔记法提效工具（Zotero 插件）",
-  "homepage": "https://github.com/018/zotcard",
+  "homepage": "https://github.com/Dragonliu2018/zotcard-8plus",
   "author": "018",
   "license": "MIT",
   "config": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/018/zotcard.git"
+    "url": "git+https://github.com/Dragonliu2018/zotcard-8plus.git"
   },
   "scripts": {
     "start": "zotero-plugin serve",

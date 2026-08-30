@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
 	"name": "ZotCard",
-	"version": "3.3.0",
+	"version": "3.4.0",
 	"description": "Writing card is more smooth, reading card is more smooth.",
-	"homepage_url": "https://github.com/018/zotcard",
+	"homepage_url": "https://github.com/Dragonliu2018/zotcard-8plus",
 	"author": "018",
 	"icons": {
 		"48": "chrome/content/images/zotcard@0.5x.png",
@@ -12,7 +12,7 @@
 	"applications": {
 		"zotero": {
 			"id": "zotcard@zotero.org",
-			"update_url": "https://raw.githubusercontent.com/018/zotcard/main/updates.json",
+			"update_url": "https://raw.githubusercontent.com/Dragonliu2018/zotcard-8plus/main/updates.json",
 			"strict_min_version": "6.999",
 			"strict_max_version": "9.*.*"
 		}

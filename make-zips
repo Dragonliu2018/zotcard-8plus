@@ -1,11 +1,16 @@
 #!/bin/bash
 set -euo pipefail
 
+VERSION="$(jq -r .version src/manifest.json)"
+XPI="zotcard-${VERSION}.xpi"
+
 rm -rf build
 mkdir build
 
 cd src
-zip -r ../build/zotcard-3.3.0.xpi *
+zip -r "../build/${XPI}" *
 cd ../build
 
-jq ".addons[\"zotcard@zotero.org\"].updates[0].update_hash = \"sha256:`shasum -a 256 zotcard-3.3.0.xpi | cut -d' ' -f1`\"" ../updates.json.tmpl > ../updates.json
+jq --arg hash "sha256:$(shasum -a 256 "${XPI}" | cut -d' ' -f1)" \
+  '.addons["zotcard@zotero.org"].updates[0].update_hash = $hash' \
+  ../updates.json.tmpl > ../updates.json
