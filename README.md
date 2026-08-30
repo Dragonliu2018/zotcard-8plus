@@ -17,6 +17,8 @@
 English | [简体中文](https://github.com/Dragonliu2018/zotcard-8plus/blob/main/README_CN.md)
 
 ## Introduction
+This is a fork of [018/zotcard](https://github.com/018/zotcard) **3.3.0**, adapted for Zotero 8/9. Plugin version `3.3.0.8plus.0` means: upstream `3.3.0` + this fork's `8plus.0`.
+
 ZotCard is a plug-in for Zotero, which is a card note-taking enhancement tool. It provides card templates (such as concept card, character card, golden sentence card, etc., by default, you can customize other card templates), so you can write cards quickly. In addition, it helps you sort cards and standardize card formats.
 
 ## Getting started

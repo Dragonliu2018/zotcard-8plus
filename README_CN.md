@@ -16,6 +16,8 @@
 [English](https://github.com/Dragonliu2018/zotcard-8plus) | 简体中文
 
 ## 介绍
+本仓库基于 [018/zotcard](https://github.com/018/zotcard) **3.3.0**，适配 Zotero 8/9。插件版本 `3.3.0.8plus.0` 表示：上游 `3.3.0` + 本 fork 的 `8plus.0`。
+
 zotcard是Zotero的一个插件，它是卡片法笔记的提效工具。它提供了卡片模版（如默认有概念卡、人物卡、金句卡等，支持自定义其他卡片模版），可以让你快速写卡。除此之外，还帮助你卡片分类以及统一卡片的标准格式。
 
 ## 快速开始

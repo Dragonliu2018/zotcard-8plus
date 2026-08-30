@@ -3,9 +3,9 @@
     "zotcard@zotero.org": {
       "updates": [
         {
-          "version": "8plus-0",
-          "update_link": "https://github.com/Dragonliu2018/zotcard-8plus/releases/latest/download/zotcard-8plus-0.xpi",
-          "update_hash": "sha256:6ce5f42cab34c32a23fcae722461ad6c5edc7d6334dcbb248aa0b237fa6ae16a",
+          "version": "3.3.0.8plus.0",
+          "update_link": "https://github.com/Dragonliu2018/zotcard-8plus/releases/latest/download/zotcard-3.3.0.8plus.0.xpi",
+          "update_hash": "sha256:4931de235966defb45f3a34be1cfa19379103a846320b7924545d8c3c7f8bfb4",
           "applications": {
             "zotero": {
               "strict_min_version": "6.999"
